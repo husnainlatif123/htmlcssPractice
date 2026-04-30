@@ -1,21 +1,153 @@
-*, *::before, *::after {
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-   background-color: #080D2B;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 99vh;
-    color: #f0F0F5;
-}
-.profile-img {
-     width: 120px;
+/* ===== UNIVERSAL RESET ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ===== BODY ===== */
+        body {
+            background-color: #080D2B;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #F0F0F5;
+        }
+
+        /* ===== CARD CONTAINER ===== */
+        .Card {
+            width: 350px;
+            background-color: #0F1642;
+            border: 1px solid #2A3370;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ===== PROFILE IMAGE ===== */
+        .profile-img {
+            width: 120px;
             height: 120px;
             border-radius: 50%;
-            border: 3px solid #920645;
+            border: 3px solid #990147;
             margin-bottom: 20px;
-}
+        }
+
+        /* ===== NAME ===== */
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #E04A7A;
+            margin-bottom: 4px;
+            letter-spacing: 0.02em;
+        }
+
+        /* ===== TITLE / ROLE ===== */
+        .Title {
+            font-size: 14px;
+            color: #6B7094;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        /* ===== DIVIDER ===== */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #990147, #4D70FF);
+            border: none;
+            border-radius: 3px;
+            margin: 0 auto 20px auto;
+        }
+
+        /* ===== BIO ===== */
+        .bio {
+            font-size: 14px;
+            color: #9B9FC0;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        /* ===== CONTACT LIST ===== */
+        .contect-list {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        .contect-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #1A2258;
+            font-size: 14px;
+        }
+
+        .contect-list li:last-child {
+            border-bottom: none;
+        }
+
+        .contect-icon {
+            display: inline-block;
+            width: 24px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        /* ===== LINKS ===== */
+        .contect-list a {
+            color: #4D70FF;
+            text-decoration: none;
+        }
+
+        .contect-list a:hover {
+            color: #E04A7A;
+            text-decoration: underline;
+        }
+
+        /* ===== SOCIAL LINKS ===== */
+        .social-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #1A2258;
+            color: #4D70FF;
+            text-decoration: none;
+            font-size: 18px;
+            border: 1px solid #2A3370;
+        }
+
+        .social-links a:hover {
+            background-color: #990147;
+            color: #F0F0F5;
+            border-color: #E04A7A;
+        }
+
+        /* ===== FOOTER TEXT ===== */
+        .card-footer {
+            margin-top: 20px;
+            font-size: 11px;
+            color: #6B7094;
+        }
+
+        .card-footer a {
+            color: #990147;
+            text-decoration: none;
+        }
+
+        .card-footer a:hover {
+            text-decoration: underline;
+        }
