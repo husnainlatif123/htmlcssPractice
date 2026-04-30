@@ -9,7 +9,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 99vh;
     color: #f0F0F5;
 }
 .profile-img {
