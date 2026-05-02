@@ -16,17 +16,6 @@
             color: #F0F0F5;
         }
 
-        /* ===== CARD CONTAINER ===== */
-        .Card {
-            width: 350px;
-            background-color: #0F1642;
-            border: 1px solid #2A3370;
-            border-radius: 16px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
-
         /* ===== PROFILE IMAGE ===== */
         .profile-img {
             width: 120px;
@@ -151,3 +140,53 @@
         .card-footer a:hover {
             text-decoration: underline;
         }
+
+
+        .Card {
+    width: 350px;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+    position: relative;
+    background: #0F1642;
+    z-index: 1;
+}
+
+/* animated border */
+.Card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+    border-radius: 16px;
+    background: linear-gradient(90deg, #990147, #4D70FF, #00f5d4, #990147);
+    background-size: 300%;
+
+    z-index: -1;
+    animation: borderMove 4s linear infinite;
+}
+
+/* inner mask */
+.Card::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+
+    border-radius: 14px;
+    background: #0F1642;
+
+    z-index: -1;
+}
+
+@keyframes borderMove {
+    0% { background-position: 0% }
+    100% { background-position: 300% }
+}
