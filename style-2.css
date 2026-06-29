@@ -1,0 +1,56 @@
+:root {
+    /* +++++ Brand color +++++ */
+    --color-primary : #C9A84C;
+    --color-primary-dark : #A8882F;
+    --color-bg : #0A0A0a;
+    --color-bg-alt : #1A1A1A;
+    --color-text : #F5F5F5;
+    --color-text-muted : #888888;
+    --color-accent : #FFFFFF;
+    --color-overlay : rgba(0 ,0 , 0 , 0.6);
+
+
+/* +++++ Typography scale (fluid with clamp) +++++ */
+    --text-sm : clamp(0.8rem , 1.5vw , 0.9rem);
+    --text-base : clamp(0.9rem , 2vw , 1rem);
+    --text-lg : clamp(1.1rem , 2.5vw , 2.25rem);
+    --text-xl : clamp(1.5rem , 4vw , 2rem);
+    --text-2xl : clamp(2rem , 6vw , 3.5rem);
+    --text-3xl : clamp(2.5rem , 8vw , 5rem);
+
+
+/* +++++ Spacing scale +++++ */
+    --space-sm : 0.5rem;
+    --space-base : 1rem;
+    --space-lg : 1.25rem;
+    --space-xl : 2rem;
+    --space-2xl : 3.5rem;
+    --space-3xl : 5rem;
+
+
+/* +++++ Transition +++++ */
+    --transition-fats : 0.2s ease;
+    --transition-normal : 0.3s ease;
+
+
+/* +++++ Layout +++++ */
+    --max-width : 1200px;
+    --border-radius : 8px;
+
+}
+
+/* +++++ UNIVERSAL RESET +++++ */
+    * , *::before , *::after {
+        box-sizing : border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+/* +++++ Body Tags +++++ */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-size: var(--text-base);
+        line-height: 1.6;
+    }
